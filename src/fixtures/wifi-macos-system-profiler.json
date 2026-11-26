@@ -1,0 +1,34 @@
+{
+  "SPAirPortDataType" : [
+    {
+      "spairport_airport_interfaces" : [
+        {
+          "_name" : "en0",
+          "spairport_airdrop_channel" : 149,
+          "spairport_caps_airdrop" : "spairport_caps_supported",
+          "spairport_current_network_information" : {
+            "_name" : "HomeNet",
+            "spairport_network_channel" : "149 (5GHz, 80MHz)",
+            "spairport_network_country_code" : "ES",
+            "spairport_network_mcs" : 9,
+            "spairport_network_phymode" : "802.11ac",
+            "spairport_network_rate" : 780,
+            "spairport_network_type" : "spairport_network_type_station",
+            "spairport_security_mode" : "spairport_security_mode_wpa2_personal",
+            "spairport_signal_noise" : "-61 dBm / -93 dBm"
+          },
+          "spairport_status_information" : "spairport_status_connected",
+          "spairport_supported_phymodes" : "802.11 a/b/g/n/ac/ax",
+          "spairport_wireless_card_type" : "Wi-Fi  (0x14E4, 0x4387)",
+          "spairport_wireless_country_code" : "ES",
+          "spairport_wireless_firmware_version" : "wl0: Jul 21 2023 18:32:55 version 20.103.11.0.8.7.159 FWID 01-6b8cd9b2",
+          "spairport_wireless_locale" : "ETSI",
+          "spairport_wireless_mac_address" : "02:00:00:aa:bb:cc"
+        },
+        {
+          "_name" : "awdl0"
+        }
+      ]
+    }
+  ]
+}

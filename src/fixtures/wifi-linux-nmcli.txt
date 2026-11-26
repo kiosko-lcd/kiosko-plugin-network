@@ -1,0 +1,1 @@
+*:HomeNet:12:2467 MHz:1170 Mbit/s:75:wlp88s0

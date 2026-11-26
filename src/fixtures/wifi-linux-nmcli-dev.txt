@@ -1,0 +1,4 @@
+enp89s0:ethernet:connected
+wlp88s0:wifi:connected
+lo:loopback:connected (externally)
+p2p-dev-wlp88s0:wifi-p2p:disconnected

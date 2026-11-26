@@ -1,0 +1,9 @@
+
+Pinging 2606:4700:4700::1111 with 32 bytes of data:
+Reply from 2606:4700:4700::1111: time=10ms
+Reply from 2606:4700:4700::1111: time=12ms
+
+Ping statistics for 2606:4700:4700::1111:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 10ms, Maximum = 12ms, Average = 11ms

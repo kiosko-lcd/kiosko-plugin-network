@@ -1,0 +1,11 @@
+
+Ping wird ausgeführt für 8.8.8.8 mit 32 Bytes Daten:
+Antwort von 8.8.8.8: Bytes=32 Zeit=14ms TTL=117
+Zeitüberschreitung der Anforderung.
+Antwort von 8.8.8.8: Bytes=32 Zeit=16ms TTL=117
+
+Ping-Statistik für 8.8.8.8:
+    Pakete: Gesendet = 3, Empfangen = 2, Verloren = 1
+    (33% Verlust),
+Ca. Zeitangaben in Millisek.:
+    Minimum = 14ms, Maximum = 16ms, Mittelwert = 15ms

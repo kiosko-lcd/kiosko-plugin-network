@@ -1,0 +1,11 @@
+Connected to 02:00:00:aa:bb:cc (on wlp88s0)
+	SSID: HomeNet
+	freq: 2467.0
+	RX: 514280 bytes (2572 packets)
+	TX: 68786 bytes (655 packets)
+	signal: -45 dBm
+	rx bitrate: 286.7 MBit/s HE-MCS 11 HE-NSS 2 HE-GI 0 HE-DCM 0
+	tx bitrate: 243.7 MBit/s HE-MCS 11 HE-NSS 2 HE-GI 2 HE-DCM 0
+	bss flags: 
+	dtim period: 1
+	beacon int: 100

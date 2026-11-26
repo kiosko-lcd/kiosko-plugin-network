@@ -1,0 +1,20 @@
+
+Hay 1 interfaz en el sistema: 
+
+    Nombre                 : Wi-Fi
+    Descripción            : Realtek RTL8822CE 802.11ac PCIe Adapter
+    GUID                   : 00000000-0000-0000-0000-000000000000
+    Dirección física      : 02:00:00:aa:bb:cc
+    Estado                 : conectado
+    SSID                   : MOVISTAR_1234
+    BSSID                  : 02:00:00:aa:bb:cd
+    Tipo de red            : Infraestructura
+    Tipo de radio          : 802.11ac
+    Autenticación          : WPA2-Personal
+    Cifrado                : CCMP
+    Modo de conexión       : Conectar automáticamente
+    Canal                  : 100
+    Velocidad de recepción (Mbps)  : 433.3
+    Velocidad de transmisión (Mbps) : 433.3
+    Señal                  : 64%
+    Perfil                 : MOVISTAR_1234

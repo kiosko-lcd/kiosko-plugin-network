@@ -1,0 +1,1 @@
+[{"dst":"default","gateway":"192.168.50.1","dev":"enp89s0","protocol":"dhcp","prefsrc":"192.168.50.42","metric":100,"flags":[]},{"dst":"default","gateway":"192.168.50.1","dev":"wlp88s0","protocol":"dhcp","prefsrc":"192.168.50.92","metric":600,"flags":[]}]

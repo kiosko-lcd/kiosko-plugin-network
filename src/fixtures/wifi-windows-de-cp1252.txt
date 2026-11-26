@@ -1,0 +1,22 @@
+
+Es ist 1 Schnittstelle auf dem System vorhanden: 
+
+    Name                   : WLAN
+    Beschreibung           : Intel(R) Wi-Fi 6 AX201 160MHz
+    GUID                   : 00000000-0000-0000-0000-000000000000
+    Physische Adresse      : 02:00:00:aa:bb:cc
+    Status                 : Verbunden
+    SSID                   : FRITZ!Box 7590
+    BSSID                  : 02:00:00:aa:bb:cd
+    Netzwerktyp            : Infrastruktur
+    Funktyp                : 802.11ac
+    Authentifizierung      : WPA2-Personal
+    Verschlüsselung        : CCMP
+    Verbindungsmodus       : Profil
+    Kanal                  : 6
+    Empfangsrate (MBit/s)  : 144.4
+    Übertragungsrate (MBit/s) : 130
+    Signal                 : 72%
+    Profil                 : FRITZ!Box 7590
+
+    Status des gehosteten Netzwerks  : Nicht verfügbar

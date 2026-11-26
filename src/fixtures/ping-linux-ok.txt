@@ -1,0 +1,8 @@
+PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=55 time=9.10 ms
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=55 time=8.70 ms
+64 bytes from 1.1.1.1: icmp_seq=3 ttl=55 time=8.60 ms
+
+--- 1.1.1.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 8.597/8.798/9.097/0.215 ms

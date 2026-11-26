@@ -1,0 +1,10 @@
+
+Pinging 1.1.1.1 with 32 bytes of data:
+Reply from 1.1.1.1: bytes=32 time=9ms TTL=57
+Reply from 1.1.1.1: bytes=32 time=11ms TTL=57
+Request timed out.
+
+Ping statistics for 1.1.1.1:
+    Packets: Sent = 3, Received = 2, Lost = 1 (33% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 9ms, Maximum = 11ms, Average = 10ms

@@ -1,0 +1,85 @@
+{
+  "name": "kiosko-plugin-network",
+  "version": "0.1.0",
+  "description": "Your connection on a small USB LCD panel: latency, jitter and packet loss to your router and the internet as a graph of the last minutes, Wi-Fi signal and channel, your public IP and when it changed, an occasional speed test (off by default) and what Pi-hole or AdGuard Home blocked, with a full-screen alert when the connection drops.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Loksly <info@kioskolcd.dev> (https://kioskolcd.dev)",
+  "keywords": [
+    "kiosko",
+    "kiosko-plugin",
+    "lcd",
+    "widgets",
+    "system",
+    "network",
+    "ping",
+    "latency",
+    "jitter",
+    "packet-loss",
+    "wifi",
+    "speedtest",
+    "pihole",
+    "adguard-home",
+    "public-ip"
+  ],
+  "homepage": "https://github.com/kiosko-lcd/kiosko-plugin-network#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiosko-lcd/kiosko-plugin-network.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kiosko-lcd/kiosko-plugin-network/issues"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "kiosko": {
+    "plugin": "./dist/index.js",
+    "id": "network",
+    "sdk": "^0.2.0",
+    "languages": [
+      "en",
+      "es",
+      "de",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "manifest": "./kiosko-manifest.json"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "files": [
+    "dist",
+    "docs",
+    "kiosko-manifest.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --conditions=source --test \"src/**/*.test.ts\"",
+    "check": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@kiosko/sdk": "^0.2.0"
+  },
+  "devDependencies": {
+    "@kiosko/core": "^0.2.11",
+    "@kiosko/sdk": "^0.2.11",
+    "@loksly/lcd-canvas-kit": "^0.2.0",
+    "@napi-rs/canvas": "^1.0.10",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.9.3"
+  }
+}
