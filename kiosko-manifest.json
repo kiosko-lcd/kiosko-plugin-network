@@ -9,7 +9,7 @@
     "zh-Hans": "你的网络连接",
     "zh-Hant": "你的網路連線"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": {
     "en": "Your connection on the panel: latency, jitter and packet loss to your router and the internet as a graph of the last minutes, the Wi-Fi signal and channel, your public IP and when it changed, an occasional speed test (off by default) and what Pi-hole or AdGuard Home blocked, with a full-screen alert when the connection drops.",
     "es": "Tu conexión en el panel: latencia, jitter y pérdida de paquetes hasta tu router e internet en una gráfica de los últimos minutos, la señal y el canal de la Wi-Fi, tu IP pública y cuándo cambió, un test de velocidad de vez en cuando (desactivado por defecto) y lo que ha bloqueado Pi-hole o AdGuard Home, con un aviso a pantalla completa si se cae la conexión.",

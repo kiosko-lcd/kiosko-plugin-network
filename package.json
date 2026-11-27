@@ -1,6 +1,6 @@
 {
   "name": "kiosko-plugin-network",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Your connection on a small USB LCD panel: latency, jitter and packet loss to your router and the internet as a graph of the last minutes, Wi-Fi signal and channel, your public IP and when it changed, an occasional speed test (off by default) and what Pi-hole or AdGuard Home blocked, with a full-screen alert when the connection drops.",
   "type": "module",
   "license": "MIT",

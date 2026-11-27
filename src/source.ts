@@ -17,7 +17,7 @@ import { execRun, tcpConnect } from './ping.ts';
 import { DEFAULT_TARGETS } from './targets.ts';
 import type { NetData } from './types.ts';
 
-export const VERSION = '0.1.0';
+export const VERSION = '0.1.1';
 export const AGENT = `kiosko-plugin-network/${VERSION}`;
 
 export const sourceOptions = t.object({
