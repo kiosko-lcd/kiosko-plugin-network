@@ -261,6 +261,11 @@ export const latency = defineWidget({
     }),
   }),
   redraw: 'never',
+  /** No sample yet from any target it would draw. */
+  empty: ({ sources, options }) => {
+    const d = dataOf(sources);
+    return !!d && seriesOf(d, String(options.target ?? '')).every((s) => !s.samples.length);
+  },
   render(g, ctx) {
     clipped(g, ctx, () => render(g, ctx));
   },

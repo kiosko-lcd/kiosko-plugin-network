@@ -155,6 +155,11 @@ export const speed = defineWidget({
   size: { min: { w: 120, h: 30 }, preferred: { w: 320, h: 160 } },
   sources: [SOURCE],
   redraw: 'minute',
+  /** No test result yet: the test is off, or the first one is running or still to come. */
+  empty: ({ sources }) => {
+    const d = dataOf(sources);
+    return !!d && !d.speed.last;
+  },
   render(g, ctx) {
     clipped(g, ctx, () => render(g, ctx));
   },

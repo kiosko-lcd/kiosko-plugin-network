@@ -137,3 +137,24 @@ test('before any data: a waiting message', () => {
     assert.deepEqual(r.texts, ['Measuring the connection…']);
   }
 });
+
+test('empty: blocker not set up or only an error, speed test without a result, latency without samples; now never', () => {
+  const st = (d: NetData | undefined, options: Record<string, unknown> = {}) => ({ options, data: undefined, sources: { [SOURCE]: d }, now: NOW, working: true }) as never;
+  const v = Object.fromEntries(variants());
+  for (const w of WIDGETS) {
+    assert.equal(w.empty?.(st(v.demo)) ?? false, false, `${w.id} demo`);
+    assert.equal(w.empty?.(st(undefined)) ?? false, false, `${w.id} loading`);
+  }
+  assert.equal(now.empty, undefined, 'the connection itself is always worth showing');
+  assert.equal(blocker.empty!(st(v.none)), true, 'no blocker');
+  assert.equal(blocker.empty!(st({ ...v.demo!, blocker: null })), true, 'blocker not read yet');
+  assert.equal(blocker.empty!(st({ ...v.demo!, blocker: { ...v.demo!.blocker!, error: 'unauthorized', queries: null } as never })), true, 'blocker down');
+  assert.equal(blocker.empty!(st(v.paused)), false, 'paused is worth seeing');
+  assert.equal(speed.empty!(st(v.wired)), true, 'speed test off');
+  assert.equal(speed.empty!(st(v.none)), true, 'first test running');
+  const quiet = structuredClone(v.demo!);
+  for (const t of quiet.targets) t.samples = [];
+  assert.equal(latency.empty!(st(quiet)), true, 'no samples');
+  assert.equal(latency.empty!(st(v.down)), false, 'losing packets is worth seeing');
+  assert.equal(latency.empty!(st(v.demo, { target: 'nowhere' })), false, 'an unknown target falls back to all');
+});

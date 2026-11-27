@@ -110,6 +110,11 @@ export const blocker = defineWidget({
   size: { min: { w: 120, h: 30 }, preferred: { w: 320, h: 160 } },
   sources: [SOURCE],
   redraw: 'never',
+  /** No blocker set up, not read yet, or it answered only an error: no share or counts to show. */
+  empty: ({ sources }) => {
+    const d = dataOf(sources);
+    return !!d && (!d.blocker || (!!d.blocker.error && !d.blocker.queries));
+  },
   render(g, ctx) {
     clipped(g, ctx, () => render(g, ctx));
   },
